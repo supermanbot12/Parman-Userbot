@@ -17,7 +17,7 @@ from userbot import MAN2, MAN3, MAN4, MAN5, bot, branch, tgbot
 from userbot.utils import checking
 
 MSG_ON = """
-🔥 **Man-Userbot Berhasil Di Aktifkan**
+🔥 **Parman-Userbot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}@{}`
 ➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
@@ -38,7 +38,7 @@ async def man_userbot_on():
     try:
         if bot and tgbot:
             ManUBOT = await tgbot.get_me()
-            BOT_USERNAME = ManUBOT.username
+            BOT_USERNAME = ParmanUBOT.username
             await bot(InviteToChannelRequest(int(BOTLOG_CHATID), [BOT_USERNAME]))
             await asyncio.sleep(3)
     except BaseException:
